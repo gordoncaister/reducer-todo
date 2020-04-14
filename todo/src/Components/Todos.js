@@ -7,6 +7,11 @@ export  const Todos = (props) => {
     }
     console.log(todoList)
     return (
-        <h1>Todos.js</h1>
+        <div>
+            {todoList.map(todo => {
+                return(
+                <h3>{todo.item}</h3>
+            )})}
+        </div>
     )
 }
