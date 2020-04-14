@@ -7,7 +7,7 @@ import Form from "./Form"
 
 export const List = (props) => {
     
-   
+   const {todoList, dispatchTodoList} = props;
     
     const handleClear = (e) => {
         e.preventDefault();
@@ -17,7 +17,7 @@ export const List = (props) => {
         <div>
             <h1>To Do List.</h1>
             <Form  />
-            <Todos todoList={props.todoList} dispatchTodoList={props.dispatchTodoList} />
+            <Todos todoList={todoList} dispatchTodoList={dispatchTodoList} />
             <button onClick={handleClear} >Clear Completed</button>
         </div>
     )
