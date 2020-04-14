@@ -17,7 +17,7 @@ export const List = (props) => {
     return (
         <div>
             <h1>To Do List.</h1>
-            <Form  />
+            <Form  dispatchTodoList={dispatchTodoList}/>
             <Todos todoList={todoList} dispatchTodoList={dispatchTodoList} />
             <button onClick={handleClear} >Clear Completed</button>
         </div>

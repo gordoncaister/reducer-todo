@@ -11,6 +11,8 @@ export const reducer = function (state, action) {
             return state.filter(todo => {
                 return !todo.completed;
             })
+        case 'add':
+            return [...state, {item: action.payload, completed:false, id:new Date()}]
     }
 }
 
