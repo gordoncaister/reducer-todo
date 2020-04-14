@@ -12,7 +12,7 @@ export  const Todos = (props) => {
         <div>
             {todoList.map(todo => {
                 return(
-                    <div  key={todo.id} onClick={handleToggle} >
+                    <div key={todo.id} onClick={handleToggle} >
                         <h3 
                         className={todo.id}
                         style={{textDecoration: `${todo.completed? 'line-through': 'none'}`}}

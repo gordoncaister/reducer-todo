@@ -11,6 +11,7 @@ export const List = (props) => {
     
     const handleClear = (e) => {
         e.preventDefault();
+        dispatchTodoList({type: 'clear'})
     }
 
     return (
